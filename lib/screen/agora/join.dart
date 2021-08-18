@@ -7,10 +7,11 @@ import 'package:agora_rtc_engine/agora_rtc_engine.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import '../../utils/settings.dart';
 import 'package:wakelock/wakelock.dart';
 import 'dart:math' as math;
 import 'package:agorartm/screen/HearAnim.dart';
+
+import '../../utils/setting.dart';
 
 class JoinPage extends StatefulWidget {
   /// non-modifiable channel name of the page
@@ -418,9 +419,9 @@ class _JoinPageState extends State<JoinPage> {
               Container(
                 decoration: BoxDecoration(
                     gradient: LinearGradient(
-                      colors: <Color>[
-                        Colors.indigo, Colors.blue
-                      ],
+                      // colors: <Color>[
+                      //   Colors.indigo, Colors.blue
+                      // ],
                     ),
                     borderRadius: BorderRadius.all(Radius.circular(4.0))
                 ),

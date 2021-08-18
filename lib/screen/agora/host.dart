@@ -9,10 +9,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 //import 'package:fluttertoast/fluttertoast.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import '../../utils/settings.dart';
 import 'package:wakelock/wakelock.dart';
 import 'dart:math' as math;
 
+import '../../utils/setting.dart';
 import '../HearAnim.dart';
 
 class CallPage extends StatefulWidget {
@@ -428,9 +428,9 @@ class _CallPageState extends State<CallPage>{
             Container(
               decoration: BoxDecoration(
                   gradient: LinearGradient(
-                    colors: <Color>[
-                      Colors.indigo, Colors.blue
-                    ],
+                    // colors: <Color>[
+                    //   Colors.indigo, Colors.blue
+                    // ],
                   ),
                   borderRadius: BorderRadius.all(Radius.circular(4.0))
               ),

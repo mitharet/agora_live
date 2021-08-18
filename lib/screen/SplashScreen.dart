@@ -76,7 +76,8 @@ class _SplashScreenState extends State<SplashScreen> {
                   SizedBox(height: 4,),
                   GradientText('DEVELOPERS',
                       gradient: LinearGradient(
-                          colors: [Colors.lightBlueAccent,  Colors.blue, Colors.indigo]),
+                          // color: [Colors.lightBlueAccent,  Colors.blue, Colors.indigo]),
+                      ),
                       style: TextStyle(fontSize: 16,),
                       textAlign: TextAlign.center,
                   ),

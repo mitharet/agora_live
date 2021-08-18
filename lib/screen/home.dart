@@ -184,11 +184,11 @@ class _HomePageState extends State<HomePage> {
                         decoration: BoxDecoration(
                             shape: BoxShape.circle,
                             gradient: LinearGradient(
-                                colors: [
-                                  Colors.indigo,
-                                  Colors.blue,
-                                  Colors.cyan
-                                ],
+                                // colors: [
+                                //   Colors.indigo,
+                                //   Colors.blue,
+                                //   Colors.cyan
+                                // ],
                                 begin: Alignment.topLeft,
                                 end: Alignment.bottomRight
                             )
@@ -253,7 +253,7 @@ class _HomePageState extends State<HomePage> {
                                         4.0) //         <--- border radius here
                                 ),
                                 gradient: LinearGradient(
-                                    colors: [Colors.black, Colors.black],
+                                    // colors: [Colors.black, Colors.black],
                                     begin: Alignment.centerLeft,
                                     end: Alignment.centerRight
                                 ),
@@ -269,7 +269,7 @@ class _HomePageState extends State<HomePage> {
                                           2.0) //         <--- border radius here
                                   ),
                                   gradient: LinearGradient(
-                                      colors: [Colors.indigo, Colors.blueAccent],
+                                      // colors: [Colors.indigo, Colors.blueAccent],
                                       begin: Alignment.centerLeft,
                                       end: Alignment.centerRight
                                   ),
