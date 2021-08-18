@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "457242856439",
+    "project_id": "agora-live-9a893",
+    "storage_bucket": "agora-live-9a893.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:457242856439:android:8a623ec02f6f285a017cf2",
+        "android_client_info": {
+          "package_name": "com.davish.agorartm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "457242856439-k2ttaeiovutqqbo2i131uq0o74pjk1im.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDIsO-o9f7yDX-r98N0iizEAs__doUzYs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "457242856439-k2ttaeiovutqqbo2i131uq0o74pjk1im.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
