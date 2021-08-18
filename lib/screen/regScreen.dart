@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:agorartm/firebaseDB/auth.dart';
+import 'package:agoraLive/firebaseDB/auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 

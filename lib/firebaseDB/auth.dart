@@ -1,9 +1,10 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-import 'package:agorartm/firebaseDB/firestoreDB.dart';
 import 'dart:async';
 
 import 'package:shared_preferences/shared_preferences.dart';
+
+import 'firestoreDB.dart';
 
 final FirebaseAuth _auth = FirebaseAuth.instance;
 final GoogleSignIn googleSignIn = GoogleSignIn();
