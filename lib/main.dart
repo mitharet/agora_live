@@ -39,7 +39,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'ShareLife',
       color: blackColor,
-      home: SplashScreen(),
+      home: HomePage(),
       routes: <String, WidgetBuilder>{
         '/HomeScreen': (BuildContext context) => new MainScreen()
       },
