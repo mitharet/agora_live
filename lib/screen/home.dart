@@ -182,15 +182,15 @@ class _HomePageState extends State<HomePage> {
                       child: Container(
                         decoration: BoxDecoration(
                             shape: BoxShape.circle,
-                            gradient: LinearGradient(
-                                // colors: [
-                                //   Colors.indigo,
-                                //   Colors.blue,
-                                //   Colors.cyan
-                                // ],
-                                begin: Alignment.topLeft,
-                                end: Alignment.bottomRight
-                            )
+                            // gradient: LinearGradient(
+                            //     // colors: [
+                            //     //   Colors.indigo,
+                            //     //   Colors.blue,
+                            //     //   Colors.cyan
+                            //     // ],
+                            //     begin: Alignment.topLeft,
+                            //     end: Alignment.bottomRight
+                            // )
                         ),
                       ),
                     ) : SizedBox(height: 0,),
@@ -251,11 +251,11 @@ class _HomePageState extends State<HomePage> {
                                     Radius.circular(
                                         4.0) //         <--- border radius here
                                 ),
-                                gradient: LinearGradient(
-                                    // colors: [Colors.black, Colors.black],
-                                    begin: Alignment.centerLeft,
-                                    end: Alignment.centerRight
-                                ),
+                                // gradient: LinearGradient(
+                                //     // colors: [Colors.black, Colors.black],
+                                //     begin: Alignment.centerLeft,
+                                //     end: Alignment.centerRight
+                                // ),
                               ),
 
 
@@ -267,11 +267,11 @@ class _HomePageState extends State<HomePage> {
                                       Radius.circular(
                                           2.0) //         <--- border radius here
                                   ),
-                                  gradient: LinearGradient(
-                                      // colors: [Colors.indigo, Colors.blueAccent],
-                                      begin: Alignment.centerLeft,
-                                      end: Alignment.centerRight
-                                  ),
+                                  // gradient: LinearGradient(
+                                  //     // colors: [Colors.indigo, Colors.blueAccent],
+                                  //     begin: Alignment.centerLeft,
+                                  //     end: Alignment.centerRight
+                                  // ),
                                 ),
 
                                 child: Padding(

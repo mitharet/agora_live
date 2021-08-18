@@ -88,7 +88,7 @@ class _CallPageState extends State<CallPage>{
     await AgoraRtcEngine.enableWebSdkInteroperability(true);
     await AgoraRtcEngine.setParameters(
         '''{\"che.video.lowBitRateStreamParameter\":{\"width\":320,\"height\":180,\"frameRate\":15,\"bitRate\":140}}''');
-    await AgoraRtcEngine.joinChannel(null, widget.channelName, null, 0);
+    await AgoraRtcEngine.joinChannel(Token, 'yudha', null, 0);
   }
 
   /// Create agora sdk instance and initialize
@@ -427,11 +427,11 @@ class _CallPageState extends State<CallPage>{
           children: <Widget>[
             Container(
               decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                    // colors: <Color>[
-                    //   Colors.indigo, Colors.blue
-                    // ],
-                  ),
+                  // gradient: LinearGradient(
+                  //   // colors: <Color>[
+                  //   //   Colors.indigo, Colors.blue
+                  //   // ],
+                  // ),
                   borderRadius: BorderRadius.all(Radius.circular(4.0))
               ),
               child: Padding(
