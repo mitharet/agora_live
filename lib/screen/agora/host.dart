@@ -7,7 +7,6 @@ import 'package:agora_rtm/agora_rtm.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-//import 'package:fluttertoast/fluttertoast.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:wakelock/wakelock.dart';
 import 'dart:math' as math;
@@ -77,12 +76,7 @@ class _CallPageState extends State<CallPage>{
     _createClient();
   }
 
-
-
-
-
   Future<void> initialize() async {
-
     await _initAgoraRtcEngine();
     _addAgoraEventHandlers();
     await AgoraRtcEngine.enableWebSdkInteroperability(true);
@@ -96,12 +90,10 @@ class _CallPageState extends State<CallPage>{
     await AgoraRtcEngine.create(APP_ID);
     await AgoraRtcEngine.enableVideo();
     await AgoraRtcEngine.enableLocalAudio(true);
-
   }
 
   /// Add agora event handlers
   void _addAgoraEventHandlers() {
-
     AgoraRtcEngine.onJoinChannelSuccess = (
       String channel,
       int uid,
@@ -112,10 +104,8 @@ class _CallPageState extends State<CallPage>{
       channelName= documentId;
       FireStoreClass.createLiveUser(name: documentId,id: uid,time: widget.time,image:widget.image);
       // The above line create a document in the firestore with username as documentID
-
       await Wakelock.enable();
       // This is used for Keeping the device awake. Its now enabled
-
     };
 
     AgoraRtcEngine.onLeaveChannel = () {
@@ -163,7 +153,6 @@ class _CallPageState extends State<CallPage>{
     return Expanded(child: ClipRRect(child: view));
   }
 
-
   /// Video view row wrapper
   Widget _expandedVideoRow(List<Widget> views) {
     final wrappedViews = views.map<Widget>(_videoView).toList();
@@ -173,7 +162,6 @@ class _CallPageState extends State<CallPage>{
       ),
     );
   }
-
 
   /// Video layout wrapper
   Widget _viewRows() {
@@ -202,7 +190,6 @@ class _CallPageState extends State<CallPage>{
           children: <Widget>[_videoView(views[0])],
         ));*/
   }
-
 
   void popUp() async{
     setState(() {
@@ -250,8 +237,6 @@ class _CallPageState extends State<CallPage>{
       ),
     );
   }
-
-
 
   /// Info panel to show logs
   Widget messageList() {
@@ -1025,4 +1010,5 @@ class _CallPageState extends State<CallPage>{
       });
     }
   }
+  ///=======================================
 }

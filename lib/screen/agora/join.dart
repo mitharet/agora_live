@@ -98,12 +98,10 @@ class _JoinPageState extends State<JoinPage> {
     await AgoraRtcEngine.enableLocalAudio(false);
     await AgoraRtcEngine.enableLocalVideo(!muted);
 
-
   }
 
   /// Add agora event handlers
   void _addAgoraEventHandlers() {
-
     AgoraRtcEngine.onJoinChannelSuccess = (
       String channel,
       int uid,
@@ -130,7 +128,6 @@ class _JoinPageState extends State<JoinPage> {
         }
         _users.remove(uid);
     };
-
 
   }
 
@@ -168,7 +165,6 @@ class _JoinPageState extends State<JoinPage> {
     return Expanded(child: ClipRRect(child: view));
   }
 
-
   /// Video view row wrapper
   Widget _expandedVideoRow(List<Widget> views) {
     final wrappedViews = views.map<Widget>(_videoView).toList();
@@ -178,7 +174,6 @@ class _JoinPageState extends State<JoinPage> {
       ),
     );
   }
-
 
   /// Video layout wrapper
   Widget _viewRows() {
@@ -237,7 +232,6 @@ class _JoinPageState extends State<JoinPage> {
           width.toDouble(),1));
     }
 
-
     return Container(
       child: Padding(
         padding: const EdgeInsets.only(bottom:20),
@@ -254,7 +248,6 @@ class _JoinPageState extends State<JoinPage> {
       ),
     );
   }
-
 
   /// Info panel to show logs
   Widget _messageList() {
@@ -945,5 +938,7 @@ class _JoinPageState extends State<JoinPage> {
       }
     }
   }
+
+  ///=========================================
 }
 
